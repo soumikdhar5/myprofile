@@ -1,0 +1,41 @@
+/* Dialog */
+
+/* .Dialogue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+} */
+
+.Dialogue .Dialogue_image{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.Dialogue .Dialogue_description{
+    margin-top: 10px !important;
+}
+
+.Dialogue .Dialogue_actions{
+    justify-content: center !important;
+    margin-bottom: 10px;
+
+}
+
+.Dialogue .Dialogue_icon{
+    color: darkslategray;
+    margin:0px 12px;
+    cursor: pointer;
+}
+
+.Dialogue .Dialogue_icon :hover {
+    color: var(--main-color);
+}
+
+.Dialogue .Dialogue_icon > .MuiSvgIcon-root {
+    font-size: 30px !important;
+}
+
+/* End of Dialog */

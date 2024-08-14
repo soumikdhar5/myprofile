@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Nav from 'react-bootstrap/Nav';
@@ -14,6 +14,7 @@ import {
   useParams,
 } from "react-router-dom";
 import './Header.css'
+import { DialogueModal } from '../Dialogue/DialogueModal';
 
 function withRouter(Component) {
   function ComponentWithRouterProp(props) {
@@ -32,9 +33,9 @@ function withRouter(Component) {
 }
 
 function Header(props) {
-
+  const [modalOpenar, setmodalOpenar] = useState(false)
   const pathName = props?.location?.pathName
-
+  console.log("inside Header", modalOpenar)
   return (
     <Navbar expand="lg" sticky='top' className="header">
       <Nav.Link as={NavLink} to="/" className="header_navlink">
@@ -62,9 +63,15 @@ function Header(props) {
           {Object.keys(resumeData.social).map((key) =>
             <a href={resumeData.social[key].link} target="_blank" rel="noopener noreferrer">{resumeData.social[key].icon}</a>
           )}
-          <CustomButton text={'Hire me'} icon={<TelegramIcon />} />
+          <CustomButton text={'Hire me'} onClick={()=>setmodalOpenar(true)} icon={<TelegramIcon />} />
+          
         </div>
       </Navbar.Collapse>
+      <DialogueModal 
+        dialgueLinks={Object.keys(resumeData.social)} 
+        openMod={modalOpenar}
+        onClose={() => setmodalOpenar(false)}
+        />
     </Navbar>
   )
 }
