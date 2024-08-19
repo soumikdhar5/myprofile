@@ -60,23 +60,19 @@ export const ConnectWithMe = () => {
     dispatch({ type: 'SET_STATUS', status: { loading: true, success: false } });
 
     try {
-      console.log('starting to fetch');
       const queryParams = new URLSearchParams({
         uname: state.uname,
         uemail: state.uemail,
         umessage: state.umessage
       }).toString();
 
-      const response = await fetch(`http://localhost:3001/send?${queryParams}`, { method: 'GET' });
+      const response = await fetch(`http://localhost:3001/api/send?${queryParams}`, { method: 'GET' });
       const result = await response.json();
-      console.log('getting response', result);
 
       if (response.ok && result.message === 'Email sent successfully') {
-        console.log('Email sent successfully');
         dispatch({ type: 'RESET_FORM' });
         dispatch({ type: 'SET_STATUS', status: { success: true, loading: false } });
       } else {
-        console.error('Error sending email', result);
         dispatch({
           type: 'SET_ERRORS',
           errors: { umessage: result.message || response.status }
@@ -84,7 +80,6 @@ export const ConnectWithMe = () => {
         dispatch({ type: 'SET_STATUS', status: { success: false, initializer: true, loading: false } });
       }
     } catch (error) {
-      console.error('Error fetching data', error);
       dispatch({
         type: 'SET_ERRORS',
         errors: { umessage: 'Error fetching data' }
