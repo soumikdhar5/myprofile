@@ -7,7 +7,7 @@ import WebOutlinedIcon from '@mui/icons-material/WebOutlined';
 import WebhookOutlinedIcon from '@mui/icons-material/WebhookOutlined';
 import { Language, YouTube } from '@mui/icons-material';
 
-export default {
+const resumeData =  {
     name: 'Soumik Dhar',
     title: 'UI Lead',
     birthday: '05th April 1984',
@@ -226,3 +226,5 @@ export default {
         },
     ]
 }
+
+export default resumeData

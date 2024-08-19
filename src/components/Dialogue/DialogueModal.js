@@ -22,8 +22,8 @@ export const DialogueModal = ({dialogueDataTitle = '',dialgueLinks, openMod, onC
                 </DialogContent>
                 <DialogActions className='Dialogue_actions'>
                 {/* projectDialog?.links */}
-                    {dialgueLinks?.map(link => (
-                        <a href={link.link} target="_blank" rel="noopener noreferrer"  className='Dialogue_icon'>{link.icon}</a>
+                    {dialgueLinks?.map((link, index) => (
+                        <a href={link.link} key={index} target="_blank" rel="noopener noreferrer"  className='Dialogue_icon'>{link.icon}</a>
                     ))}
                 </DialogActions>
             </Dialog>

@@ -37,10 +37,10 @@ function Resume() {
             {/* Experiances */}
             <Grid item sm={12} md={6} >
               <CustomTimeLine title='Work Experiance' icon={<WorkIcon />}>
-                {resumeData.experiances.map(experiance => (
-                  <TimelineItem>
+                {resumeData.experiances.map((experiance, index) => (
+                  <TimelineItem key={index}>
                     <CustomTimelineSeparator />
-                    <TimelineContent className='timeline_content'>
+                    <TimelineContent  className='timeline_content'>
                       <Typography className='timeline_title'>{experiance.title}</Typography>
                       <Typography variant='caption' className='timeline_date'>{experiance.date}</Typography>
                       <Typography variant='body2' className='timeline_description'>{experiance.description}</Typography>
@@ -53,8 +53,8 @@ function Resume() {
             {/* Education */}
             <Grid item sm={12} md={6} >
               <CustomTimeLine title='Education' icon={<SchoolIcon />}>
-                {resumeData.education.map(education => (
-                  <TimelineItem>
+                {resumeData.education.map((education,index) => (
+                  <TimelineItem key={index}>
                     <CustomTimelineSeparator />
                     <TimelineContent className='timeline_content'>
                       <Typography className='timeline_title'>{education.title}</Typography>
@@ -76,8 +76,8 @@ function Resume() {
         </Grid>
         <Grid item xs={12}>
           <Grid container spacing={3} justify="space-around">
-            {resumeData.services.map((service) => (
-              <Grid item xs={12} sm={6} md={6}>
+            {resumeData.services.map((service, index) => (
+              <Grid item xs={12} sm={6} md={6} key={index}>
                 <div className='service'>
                   <Icon className='service_icon'>{service.icon}</Icon>
                   <Typography className='service_title' variant='h6'>{service.title}</Typography>
@@ -92,14 +92,14 @@ function Resume() {
       <Grid container className='section greybg pb_45 p_50'>
         <Grid item xs={12}>
           <Grid container justify='space-around' spacing={3}>
-            {resumeData.skill.map((skill) => (
-              <Grid item xs={12} sm={6} md={4}>
+            {resumeData.skill.map((skill,index) => (
+              <Grid item xs={12} sm={6} md={4} key={index}>
                 <Paper elevation={0} className='skill'>
                   <Typography variant='h6' className='skills_title'>
                     {skill.title}
                   </Typography>
-                  {skill.description.map(element => (
-                    <Typography variant='body2' className='skill_description'>
+                  {skill.description.map((element,index) => (
+                    <Typography variant='body2' key={index} className='skill_description'>
                       <TimelineDot variant={'outlined'} className='timeline_dot' />{element}
                     </Typography>))}
                 </Paper>
@@ -149,8 +149,8 @@ function Resume() {
 
                 <Grid item xs={12}>
                   <Grid container className='contactInfo_socialsContainer'>
-                    {Object.keys(resumeData.social).map(key => (
-                      <Grid item className='contactInfo_social'>
+                    {Object.keys(resumeData.social).map((key,index) => (
+                      <Grid item className='contactInfo_social' key={index}>
                         <a href={resumeData.social[key].link} target="_blank" rel="noopener noreferrer">{resumeData.social[key].icon}</a>
                       </Grid>))}
                   </Grid>
