@@ -28,7 +28,7 @@ function Header() {
       <Navbar.Collapse>
         <Nav className="header_left">
           {/* Resume Link */}
-          <Nav.Link as={NavLink} to="/myprofile" className={getNavLinkClass('/')}>
+          <Nav.Link as={NavLink} to="/" className={getNavLinkClass('/')}>
             Resume
           </Nav.Link>
           {/* Portfolio Link */}
