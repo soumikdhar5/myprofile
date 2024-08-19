@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myprofile/static/css/main.0b534839.css",
-    "main.js": "/myprofile/static/js/main.60a956c7.js",
+    "main.js": "/myprofile/static/js/main.c4beca4b.js",
     "static/js/453.eac7bafd.chunk.js": "/myprofile/static/js/453.eac7bafd.chunk.js",
     "static/media/pics0um1k_dhar005.png": "/myprofile/static/media/pics0um1k_dhar005.b30a955fc7bdb47c4751.png",
     "static/media/RestaurantbasedProject.jpg": "/myprofile/static/media/RestaurantbasedProject.327ccd7743a2ff82f18d.jpg",
@@ -10,11 +10,11 @@
     "static/media/tycho.jpg": "/myprofile/static/media/tycho.839768f04e483b94bbe3.jpg",
     "index.html": "/myprofile/index.html",
     "main.0b534839.css.map": "/myprofile/static/css/main.0b534839.css.map",
-    "main.60a956c7.js.map": "/myprofile/static/js/main.60a956c7.js.map",
+    "main.c4beca4b.js.map": "/myprofile/static/js/main.c4beca4b.js.map",
     "453.eac7bafd.chunk.js.map": "/myprofile/static/js/453.eac7bafd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b534839.css",
-    "static/js/main.60a956c7.js"
+    "static/js/main.c4beca4b.js"
   ]
 }
