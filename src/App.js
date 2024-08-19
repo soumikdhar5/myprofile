@@ -22,7 +22,7 @@ function App() {
             <Header />
             <div className='main_content'>
               <Routes>
-                <Route index path='/myprofile' element={<Resume />} />
+                <Route path='/myprofile' element={<Resume />} />
                 <Route path='/vlogs' element={<Vlogs />} />
                 <Route path='/portfolio' element={<Portfolio />} />
               </Routes>
