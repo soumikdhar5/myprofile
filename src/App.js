@@ -24,7 +24,7 @@ function App() {
               <Routes>
                 <Route path='/vlogs' element={<Vlogs />} />
                 <Route path='/portfolio' element={<Portfolio />} />
-                <Route path='/' element={<Resume />} />
+                <Route path='/myprofile' element={<Resume />} />
               </Routes>
             </div>
 

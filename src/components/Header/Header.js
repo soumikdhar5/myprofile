@@ -19,7 +19,7 @@ function Header() {
 
   return (
     <Navbar expand="lg" sticky='top' className="header">
-      <Nav.Link as={NavLink} to="/" className="header_navlink">
+      <Nav.Link as={NavLink} to="/myprofile" className="header_navlink">
         <Navbar.Brand className='header_home'>
           <HomeRounded />
         </Navbar.Brand>
@@ -28,7 +28,7 @@ function Header() {
       <Navbar.Collapse>
         <Nav className="header_left">
           {/* Resume Link */}
-          <Nav.Link as={NavLink} to="/" className={getNavLinkClass('/')}>
+          <Nav.Link as={NavLink} to="/myprofile" className={getNavLinkClass('/')}>
             Resume
           </Nav.Link>
           {/* Portfolio Link */}
