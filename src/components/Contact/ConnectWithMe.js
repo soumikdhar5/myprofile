@@ -5,6 +5,7 @@ import SuccessTick from '../Messagestatus/SuccessTick';
 import '../../App.css';
 import CrossFail from '../Messagestatus/CrossFail';
 import { validateForm } from './formValidation';
+import { emailService } from '../../Service/apiService';
 
 // Define the initial state and reducer function
 const initialState = {
@@ -66,7 +67,9 @@ export const ConnectWithMe = () => {
         umessage: state.umessage
       }).toString();
 
-      const response = await fetch(`http://localhost:3001/api/send?${queryParams}`, { method: 'GET' });
+      // const response = await fetch(`http://localhost:3001/api/send?${queryParams}`, { method: 'GET' });
+      const response = await emailService(queryParams);
+      
       const result = await response.json();
 
       if (response.ok && result.message === 'Email sent successfully') {

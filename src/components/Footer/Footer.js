@@ -11,9 +11,9 @@ function Footer() {
       </div>
       <div className='footer_right'>
         <Typography className='footer_copyright'>
-          Designed and Developed by <a href='/' target='_blank'>Soumik Dhar</a>
+          Designed and Developed by <a href='/' rel="noopener noreferrer" target='_blank'>Soumik Dhar</a>
           <br />
-          Clone idea from <a href='https://www.themeforest.net/user/travonline' target='_blank'>
+          Clone idea from <a href='https://www.themeforest.net/user/travonline' rel="noopener noreferrer" target='_blank'>
             Travonline
           </a>
         </Typography>
