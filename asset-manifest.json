@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/myprofile/static/css/main.0b534839.css",
+    "main.js": "/myprofile/static/js/main.fbc9c345.js",
+    "static/js/453.eac7bafd.chunk.js": "/myprofile/static/js/453.eac7bafd.chunk.js",
+    "static/media/pics0um1k_dhar005.png": "/myprofile/static/media/pics0um1k_dhar005.b30a955fc7bdb47c4751.png",
+    "static/media/RestaurantbasedProject.jpg": "/myprofile/static/media/RestaurantbasedProject.327ccd7743a2ff82f18d.jpg",
+    "static/media/Smartmanage.jpg": "/myprofile/static/media/Smartmanage.733b6695543114f30e38.jpg",
+    "static/media/DreCockpit.jpg": "/myprofile/static/media/DreCockpit.71751967712d056fe870.jpg",
+    "static/media/tycho.jpg": "/myprofile/static/media/tycho.839768f04e483b94bbe3.jpg",
+    "index.html": "/myprofile/index.html",
+    "main.0b534839.css.map": "/myprofile/static/css/main.0b534839.css.map",
+    "main.fbc9c345.js.map": "/myprofile/static/js/main.fbc9c345.js.map",
+    "453.eac7bafd.chunk.js.map": "/myprofile/static/js/453.eac7bafd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0b534839.css",
+    "static/js/main.fbc9c345.js"
+  ]
+}
