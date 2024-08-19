@@ -22,9 +22,9 @@ function App() {
             <Header />
             <div className='main_content'>
               <Routes>
+                <Route index path='/' element={<Resume />} />
                 <Route path='/vlogs' element={<Vlogs />} />
                 <Route path='/portfolio' element={<Portfolio />} />
-                <Route path='/' element={<Resume />} />
               </Routes>
             </div>
 
