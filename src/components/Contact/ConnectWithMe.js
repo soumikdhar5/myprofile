@@ -91,7 +91,7 @@ export const ConnectWithMe = () => {
   return (
     <div>
       <Grid container>
-        <form onSubmit={handleSubmit}>
+        <form name='submit_form' onSubmit={handleSubmit}>
           <Grid item xs={12}>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={6}>

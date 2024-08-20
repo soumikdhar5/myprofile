@@ -59,6 +59,7 @@
     margin-left: 0 !important;
     font-weight: 300 !important;
     color: darkslategray !important;
+    overflow:visible !important;
 }
 
 /* End of services */
