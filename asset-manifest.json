@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myprofile/static/css/main.b91a39f9.css",
-    "main.js": "/myprofile/static/js/main.36e3610e.js",
+    "main.js": "/myprofile/static/js/main.a7322183.js",
     "static/js/453.eac7bafd.chunk.js": "/myprofile/static/js/453.eac7bafd.chunk.js",
     "static/media/pics0um1k_dhar005.png": "/myprofile/static/media/pics0um1k_dhar005.b30a955fc7bdb47c4751.png",
     "static/media/RestaurantbasedProject.jpg": "/myprofile/static/media/RestaurantbasedProject.327ccd7743a2ff82f18d.jpg",
@@ -10,11 +10,11 @@
     "static/media/tycho.jpg": "/myprofile/static/media/tycho.839768f04e483b94bbe3.jpg",
     "index.html": "/myprofile/index.html",
     "main.b91a39f9.css.map": "/myprofile/static/css/main.b91a39f9.css.map",
-    "main.36e3610e.js.map": "/myprofile/static/js/main.36e3610e.js.map",
+    "main.a7322183.js.map": "/myprofile/static/js/main.a7322183.js.map",
     "453.eac7bafd.chunk.js.map": "/myprofile/static/js/453.eac7bafd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b91a39f9.css",
-    "static/js/main.36e3610e.js"
+    "static/js/main.a7322183.js"
   ]
 }
