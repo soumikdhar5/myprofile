@@ -101,7 +101,7 @@ function Vlogs() {
         </DialogContent>
         <DialogActions className='projectDialog_actions'>
           {vlogDialog?.links?.map(link => (
-            <a href={link.link} target='_blank' className='projectDialog_icon'>{link.icon}</a>
+            <a href={link.link} target='_blank' rel="noopener noreferrer" className='projectDialog_icon'>{link.icon}</a>
           ))}
         </DialogActions>
       </Dialog>

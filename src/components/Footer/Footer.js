@@ -13,7 +13,7 @@ function Footer() {
         <Typography className='footer_copyright'>
           Designed and Developed by <a href='/' target='_blank'>Soumik Dhar</a>
           <br />
-          Clone idea from <a href='https://www.themeforest.net/user/travonline' target='_blank'>
+          Clone idea from <a href='https://www.themeforest.net/user/travonline' rel="noopener noreferrer" target='_blank'>
             Travonline
           </a>
         </Typography>
