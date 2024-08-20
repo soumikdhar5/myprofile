@@ -7,11 +7,9 @@ import Resume from './pages/Resume/Resume';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Vlogs from './pages/Vlogs/Vlogs';
-import { useLocation } from 'react-router-dom';
 
 function App() {
-  const location = useLocation();
-  console.log('checking path at Appjs',location.pathname)
+
   return (
     <Container className={'top_60'}>
       <Grid container spacing={4}>
