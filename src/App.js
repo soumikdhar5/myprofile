@@ -8,8 +8,8 @@ import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Vlogs from './pages/Vlogs/Vlogs';
 
-
 function App() {
+
   return (
     <Container className={'top_60'}>
       <Grid container spacing={4}>
@@ -22,9 +22,10 @@ function App() {
             <Header />
             <div className='main_content'>
               <Routes>
-                <Route path='/myprofile' element={<Resume />} />
                 <Route path='/vlogs' element={<Vlogs />} />
                 <Route path='/portfolio' element={<Portfolio />} />
+                <Route path='/myprofile' element={<Resume />} />
+                <Route path='/' element={<Resume />} />
               </Routes>
             </div>
 

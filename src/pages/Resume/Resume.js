@@ -79,7 +79,7 @@ function Resume() {
             {resumeData.services.map((service, index) => (
               <Grid item xs={12} sm={6} md={6} key={index}>
                 <div className='service'>
-                  <Icon className='service_icon'>{service.icon}</Icon>
+                  <Icon className='service_icon' style={{overflow:'visible'}}>{service.icon}</Icon>
                   <Typography className='service_title' variant='h6'>{service.title}</Typography>
                   <Typography className='service_description' variant='body2'>{service.description}</Typography>
                 </div>

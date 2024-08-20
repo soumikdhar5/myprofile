@@ -16,7 +16,7 @@ function Header() {
 
   // Function to determine if the NavLink is active
   const getNavLinkClass = (path) => location.pathname === path ? 'header_link_active' : 'header_link';
-  console.log("checking inside header", location.pathname)
+  // console.log('checking path',location.pathname)
   return (
     <Navbar expand="lg" sticky='top' className="header">
       <Nav.Link as={NavLink} to="/" className="header_navlink">

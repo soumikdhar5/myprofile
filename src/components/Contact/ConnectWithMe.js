@@ -1,11 +1,11 @@
 import React, { useReducer } from 'react';
-import { Grid, TextField, CircularProgress, InputLabel } from '@mui/material';
+import { Grid, TextField, CircularProgress } from '@mui/material';
 import CustomButton from '../../components/Button/CustomButton';
 import SuccessTick from '../Messagestatus/SuccessTick';
 import '../../App.css';
 import CrossFail from '../Messagestatus/CrossFail';
 import { validateForm } from './formValidation';
-import { emailService } from '../../Service/apiService';
+import { connectService } from '../../services/apiservice';
 
 // Define the initial state and reducer function
 const initialState = {
@@ -67,9 +67,7 @@ export const ConnectWithMe = () => {
         umessage: state.umessage
       }).toString();
 
-      // const response = await fetch(`http://localhost:3001/api/send?${queryParams}`, { method: 'GET' });
-      const response = await emailService(queryParams);
-      
+      const response = await connectService(queryParams)
       const result = await response.json();
 
       if (response.ok && result.message === 'Email sent successfully') {
@@ -94,11 +92,10 @@ export const ConnectWithMe = () => {
   return (
     <div>
       <Grid container>
-        <form onSubmit={handleSubmit}>
+        <form name='submit_form' onSubmit={handleSubmit}>
           <Grid item xs={12}>
-            <Grid container spacing={3}>
+            <Grid container spacing={5}>
               <Grid item xs={12} sm={6}>
-                <InputLabel>Name</InputLabel>
                 <TextField
                   fullWidth
                   name='uname'
@@ -108,10 +105,11 @@ export const ConnectWithMe = () => {
                   onFocus={handleFocus}
                   error={Boolean(state.errors.uname)}
                   helperText={state.errors.uname}
+                  margin="normal"
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
-                <InputLabel>E-mail</InputLabel>
+                <span></span>
                 <TextField
                   fullWidth
                   name='uemail'
@@ -121,10 +119,10 @@ export const ConnectWithMe = () => {
                   onFocus={handleFocus}
                   error={Boolean(state.errors.uemail)}
                   helperText={state.errors.uemail}
+                  margin="normal"
                 />
               </Grid>
               <Grid item xs={12}>
-                <InputLabel>Message</InputLabel>
                 <TextField
                   fullWidth
                   name='umessage'
@@ -136,6 +134,7 @@ export const ConnectWithMe = () => {
                   rows={4}
                   error={Boolean(state.errors.umessage)}
                   helperText={state.errors.umessage}
+                  margin="normal"
                 />
               </Grid>
               <Grid item xs={12}>
