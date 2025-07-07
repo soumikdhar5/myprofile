@@ -63,7 +63,7 @@ const resumeData =  {
     {
         title: 'BSc Science',
         date: '2004',
-        description: 'Bachaleor in Science',
+        description: 'Bachaleor in Pure Science',
     },
     {
         title: 'Higher Secondary',
