@@ -44,7 +44,7 @@ function Header() {
           {Object.keys(resumeData.social).map((key, index) =>
             <a href={resumeData.social[key].link} key={index} target="_blank" rel="noopener noreferrer">{resumeData.social[key].icon}</a>
           )}
-          <CustomButton text={'Hire me'} onClick={() => setmodalOpenar(true)} icon={<TelegramIcon />} />
+          <CustomButton text={'Contact me'} onClick={() => setmodalOpenar(true)} icon={<TelegramIcon />} />
         </div>
       </Navbar.Collapse>
       <DialogueModal 
