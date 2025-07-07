@@ -38,7 +38,7 @@ const resumeData =  {
             icon: <GitHubIcon />,
         }
     },
-    about: 'As an accomplished manager, C2 brings extensive experience in leading technical teams to successfully deliver high-profile client projects. During tenure at Capgemini, assumed the role of Technical UI Lead and senior developer for a major US restaurant chain and an energy company. Oversaw a team exceeding 10 members within a Micro Frontend Environment, ensuring prompt task completion while maintaining a bug count below 10%.\nBefore joining Capgemini, held the position of Senior IT Analyst at Dell for over a decade, specializing in enterprise business integration. Developed ETL applications, Notification Subscription models, and API generators, which significantly streamlined data access and boosted productivity. Recognized for technical prowess, achieved a 25% reduction in incident resolution time and a 50% increase in task completion through process automation.\nPrior experience includes roles in customer care and operations, where refined communication and problem-solving skills were honed. Managed teams and projects to enhance operational efficiency and ensure customer satisfaction.',
+    about: 'I am a seasoned Full Stack Lead and UI Architect with over 15 years of experience delivering scalable, cloud-native applications across global enterprise environments. Currently at Capgemini, I lead architecture and development initiatives for high-impact clients in sectors like energy and retail. My recent focus has been on React.js, Node.js, GraphQL, and Micro Frontend architectures, where I’ve guided cross-functional teams in modernizing legacy systems, improving code quality, and enhancing user experience.\nPreviously, I spent over a decade at Dell Technologies as a Senior IT Analyst, where I specialized in enterprise integration, building ETL tools, subscription models, and reusable API frameworks. My efforts contributed to a 25% reduction in incident resolution time and significantly improved delivery velocity through automation and process optimization.\nI thrive at the intersection of technology and leadership, with a passion for clean architecture, performance tuning, and DevOps adoption. I bring strong communication, stakeholder engagement, and mentoring skills, shaped by earlier roles in customer care and operations.',
     experiances: [{
         title: 'Technical Manager UI Lead',
         date: '2023 till now',
@@ -61,9 +61,9 @@ const resumeData =  {
         description: 'Specialised on Information Technology on Biological Science',
     },
     {
-        title: 'BSc Biology',
+        title: 'BSc Science',
         date: '2004',
-        description: 'Bachaleor in Biological Science',
+        description: 'Bachaleor in Science',
     },
     {
         title: 'Higher Secondary',
